@@ -1,0 +1,30 @@
+//2017-4-17 17:03:02 ,change sh type
+//2017-4-21-10:32:46，add csi type
+option java_package="hbec.app.quotation.stream.message";
+
+message QuotationPack{
+	required string tradingDate=1;
+		
+	enum SecuType{
+		SZ_Index=1;
+		SZ_Stock=2;
+		SZ_Bond=3;
+		SZ_Fund=4;
+		Other=5;
+		CSIndex=6;
+		CSIopv=7;
+		SH_Index=8;
+		SH_Stock=9;
+		SH_Bond=10;
+		SH_Fund=11;
+	}
+	required SecuType secuType=2[default=Other];
+	
+	message Quotation{
+		repeated string value=1;
+	}
+	
+	repeated Quotation quotes=3;
+}
+
+

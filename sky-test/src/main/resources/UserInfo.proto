@@ -1,0 +1,13 @@
+syntax = "proto2";
+option java_outer_classname = "User";
+
+enum UserStatus {
+          OFFLINE = 0;  //表示处于离线状态的用户
+          ONLINE = 1;   //表示处于在线状态的用户
+}
+
+message LogonReqMessage {
+          required int64 acctID = 1;
+          required string passwd = 2;
+		  required UserStatus status = 3;
+}

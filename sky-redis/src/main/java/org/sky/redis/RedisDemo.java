@@ -1,7 +1,5 @@
 package org.sky.redis;
 
-import java.util.Set;
-
 import org.springside.modules.nosql.redis.JedisTemplate;
 import org.springside.modules.nosql.redis.pool.JedisPool;
 import org.springside.modules.nosql.redis.pool.JedisPoolBuilder;
@@ -20,7 +18,7 @@ public class RedisDemo {
 		
 		JedisTemplate jedisTemplate = new JedisTemplate(jedisPool);
 		
-		Set<String> keys = jedisTemplate.keys("*");
+		/*Set<String> keys = jedisTemplate.keys("*");
 		System.out.println(keys);
 		
 		String name = jedisTemplate.get("name");
@@ -29,7 +27,7 @@ public class RedisDemo {
 		String cursor ="";
 		String pattern ="";
 		int count =100;
-		jedisTemplate.scan(cursor, pattern, count);
+		jedisTemplate.scan(cursor, pattern, count);*/
 		
 	}
 }

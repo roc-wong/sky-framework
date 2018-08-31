@@ -1,0 +1,12 @@
+<configuration debug="false">
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %highlight(%-5level) %boldYellow(%t)[%boldGreen(%logger.%M:%L)]%marker %msg%n</pattern>
+            <outputPatternAsHeader>true</outputPatternAsHeader>
+            <immediateFlush>true</immediateFlush>
+        </encoder>
+    </appender>
+    <root level="DEBUG">
+        <appender-ref ref="STDOUT" />
+    </root>
+</configuration>

@@ -13,12 +13,6 @@
 
 
     <dependencies>
-        <dependency>
-            <groupId>hbec</groupId>
-            <artifactId>hbec-app-stock-rabbitmq</artifactId>
-            <version>1.0.8-SNAPSHOT</version>
-        </dependency>
-
         <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
         <dependency>
             <groupId>redis.clients</groupId>

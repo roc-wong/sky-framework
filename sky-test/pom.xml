@@ -22,7 +22,7 @@
 
     <dependencies>
 
-        <dependency>
+        <!--<dependency>
             <groupId>hbec</groupId>
             <artifactId>hbec-app-stock-rabbitmq</artifactId>
             <version>1.0.3-SNAPSHOT</version>
@@ -44,6 +44,16 @@
             <groupId>hbec</groupId>
             <artifactId>hbec-commons-app-stock-condition-model</artifactId>
             <version>3.6.1.2-SNAPSHOT</version>
+        </dependency>-->
+
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
         </dependency>
 
         <dependency>
@@ -110,7 +120,7 @@
         <dependency>
             <groupId>commons-beanutils</groupId>
             <artifactId>commons-beanutils-core</artifactId>
-            <version>1.8.3-SONATYPE</version>
+            <version>1.8.3</version>
             <exclusions>
                 <exclusion>
                     <artifactId>commons-logging</artifactId>
@@ -176,6 +186,13 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.openjdk.jol/jol-core -->
+        <dependency>
+            <groupId>org.openjdk.jol</groupId>
+            <artifactId>jol-core</artifactId>
+            <version>0.10</version>
         </dependency>
 
     </dependencies>

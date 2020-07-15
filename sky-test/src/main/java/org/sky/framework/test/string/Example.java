@@ -1,4 +1,4 @@
-package org.sky.framework.test;
+package org.sky.framework.test.string;
 
 public class Example {
     String str = new String("good");

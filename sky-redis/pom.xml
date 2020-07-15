@@ -19,7 +19,6 @@
 			<groupId>io.springside</groupId>
 			<artifactId>springside-redis</artifactId>
 		</dependency>
-		
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
